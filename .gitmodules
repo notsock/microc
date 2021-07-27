@@ -1,0 +1,3 @@
+[submodule "lib/kiboard.pretty"]
+	path = lib/kiboard.pretty
+	url = git@github.com:notsock/kiboard.pretty.git

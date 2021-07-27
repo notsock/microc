@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name kiboard)(type KiCad)(uri /home/nimda/Documents/git/microc/lib/kiboard.pretty)(options "")(descr ""))
+)

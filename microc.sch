@@ -14,23 +14,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U1
-U 1 1 60FE5969
-P 6400 4700
-F 0 "U1" V 6300 4750 50  0000 R CNN
-F 1 "ATmega32U4-AU" V 6400 5050 50  0000 R CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 6400 4700 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 6400 4700 50  0001 C CNN
-	1    6400 4700
-	0    1    1    0   
-$EndComp
-$Comp
 L Connector:USB_C_Receptacle_USB2.0 J3
 U 1 1 60FE76D4
 P 4750 2700
 F 0 "J3" H 4857 3567 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 4857 3476 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 4900 2700 50  0001 C CNN
+F 2 "kiboard:USB-C_16P_Midmount" H 4900 2700 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4900 2700 50  0001 C CNN
 	1    4750 2700
 	1    0    0    -1  
@@ -146,17 +135,6 @@ Connection ~ 5750 2300
 Wire Wire Line
 	5750 2300 5750 2200
 Wire Wire Line
-	5350 2700 5450 2700
-Wire Wire Line
-	5450 2700 5450 2600
-Wire Wire Line
-	5450 2600 5350 2600
-Wire Wire Line
-	5450 2600 5600 2600
-Wire Wire Line
-	5900 2600 5900 2250
-Connection ~ 5450 2600
-Wire Wire Line
 	5350 2800 5450 2800
 Wire Wire Line
 	5450 2800 5450 2900
@@ -166,15 +144,13 @@ Connection ~ 5450 2900
 Wire Wire Line
 	6700 2250 6700 2350
 Wire Wire Line
-	5900 2250 6700 2250
-Wire Wire Line
-	5450 2900 5600 2900
+	5900 2250 6150 2250
 Wire Wire Line
 	5900 2900 5900 3250
 Wire Wire Line
 	6700 3250 6700 3150
 Wire Wire Line
-	5900 3250 6700 3250
+	5900 3250 6150 3250
 Wire Wire Line
 	6900 2350 6900 2250
 Wire Wire Line
@@ -293,42 +269,11 @@ Wire Wire Line
 Connection ~ 4500 4700
 Wire Wire Line
 	4500 4700 4500 4600
-Connection ~ 9200 4700
-Wire Wire Line
-	9200 4700 9600 4700
-Connection ~ 8800 4700
-Wire Wire Line
-	8800 4700 9200 4700
 Wire Wire Line
 	8400 4800 8400 4700
-Connection ~ 8400 4700
-Wire Wire Line
-	8400 4700 8800 4700
-Wire Wire Line
-	10000 4600 10000 4800
-Wire Wire Line
-	9600 4700 9600 4800
-Wire Wire Line
-	9200 4800 9200 4700
-Wire Wire Line
-	8800 4800 8800 4700
-Wire Wire Line
-	8800 5100 9200 5100
 Connection ~ 8800 5100
 Wire Wire Line
 	8800 5000 8800 5100
-Wire Wire Line
-	9200 5100 9600 5100
-Connection ~ 9200 5100
-Wire Wire Line
-	9200 5000 9200 5100
-Wire Wire Line
-	9600 5100 10000 5100
-Connection ~ 9600 5100
-Wire Wire Line
-	9600 5000 9600 5100
-Wire Wire Line
-	10000 5100 10000 5000
 Wire Wire Line
 	8400 5100 8800 5100
 Wire Wire Line
@@ -336,42 +281,9 @@ Wire Wire Line
 $Comp
 L Device:C_Small C8
 U 1 1 6118D688
-P 10000 4900
-F 0 "C8" H 10100 4900 39  0000 C CNN
-F 1 "4.7u" H 9850 4900 39  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 10000 4900 50  0001 C CNN
-F 3 "~" H 10000 4900 50  0001 C CNN
-	1    10000 4900
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C7
-U 1 1 6118D2F6
-P 9600 4900
-F 0 "C7" H 9700 4900 39  0000 C CNN
-F 1 "0.1u" H 9450 4900 39  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9600 4900 50  0001 C CNN
-F 3 "~" H 9600 4900 50  0001 C CNN
-	1    9600 4900
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C6
-U 1 1 6118CF48
-P 9200 4900
-F 0 "C6" H 9300 4900 39  0000 C CNN
-F 1 "0.1u" H 9050 4900 39  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9200 4900 50  0001 C CNN
-F 3 "~" H 9200 4900 50  0001 C CNN
-	1    9200 4900
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C5
-U 1 1 6118C778
 P 8800 4900
-F 0 "C5" H 8900 4900 39  0000 C CNN
-F 1 "0.1u" H 8650 4900 39  0000 C CNN
+F 0 "C8" H 8900 4900 39  0000 C CNN
+F 1 "4.7u" H 8650 4900 39  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8800 4900 50  0001 C CNN
 F 3 "~" H 8800 4900 50  0001 C CNN
 	1    8800 4900
@@ -398,7 +310,7 @@ Wire Wire Line
 	8200 4700 8250 4700
 Connection ~ 8250 4700
 Wire Wire Line
-	8200 4600 10000 4600
+	8200 4600 8800 4600
 Connection ~ 4750 3700
 $Comp
 L Connector_Generic:Conn_01x12 J2
@@ -582,46 +494,92 @@ Wire Wire Line
 	8400 4050 8400 4000
 NoConn ~ 7700 4100
 NoConn ~ 7500 4100
-Wire Wire Line
-	5800 2600 5900 2600
 $Comp
 L Device:R_Small R5
 U 1 1 61406714
-P 5700 2600
-F 0 "R5" V 5800 2600 50  0000 C CNN
-F 1 "22" V 5700 2600 39  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5700 2600 50  0001 C CNN
-F 3 "~" H 5700 2600 50  0001 C CNN
-	1    5700 2600
+P 6250 2250
+F 0 "R5" V 6350 2250 50  0000 C CNN
+F 1 "22" V 6250 2250 39  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6250 2250 50  0001 C CNN
+F 3 "~" H 6250 2250 50  0001 C CNN
+	1    6250 2250
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R6
 U 1 1 61409009
-P 5700 2900
-F 0 "R6" V 5800 2900 50  0000 C CNN
-F 1 "22" V 5700 2900 39  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5700 2900 50  0001 C CNN
-F 3 "~" H 5700 2900 50  0001 C CNN
-	1    5700 2900
+P 6250 3250
+F 0 "R6" V 6350 3250 50  0000 C CNN
+F 1 "22" V 6250 3250 39  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6250 3250 50  0001 C CNN
+F 3 "~" H 6250 3250 50  0001 C CNN
+	1    6250 3250
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5800 2900 5900 2900
 $Comp
 L power:+5V #PWR0106
 U 1 1 6142AA7E
-P 10400 4950
-F 0 "#PWR0106" H 10400 4800 50  0001 C CNN
-F 1 "+5V" H 10400 5100 50  0000 C CNN
-F 2 "" H 10400 4950 50  0001 C CNN
-F 3 "" H 10400 4950 50  0001 C CNN
-	1    10400 4950
+P 9200 4950
+F 0 "#PWR0106" H 9200 4800 50  0001 C CNN
+F 1 "+5V" H 9200 5100 50  0000 C CNN
+F 2 "" H 9200 4950 50  0001 C CNN
+F 3 "" H 9200 4950 50  0001 C CNN
+	1    9200 4950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10000 5100 10400 5100
+	9200 5100 9200 4950
 Wire Wire Line
-	10400 5100 10400 4950
-Connection ~ 10000 5100
+	8800 5100 9200 5100
+Wire Wire Line
+	8800 4800 8800 4600
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4RC-AU U3
+U 1 1 60FFCB9D
+P 6400 4700
+F 0 "U3" V 6350 4750 50  0000 R CNN
+F 1 "ATmega32U4RC-AU" V 6450 5100 50  0000 R CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 6400 4700 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 6400 4700 50  0001 C CNN
+	1    6400 4700
+	0    1    1    0   
+$EndComp
+Text GLabel 6900 3150 2    50   Input ~ 0
+D+
+Text GLabel 6900 2350 2    50   Input ~ 0
+D-
+$Comp
+L Device:R_Small R7
+U 1 1 6102E257
+P 5700 2650
+F 0 "R7" V 5800 2650 50  0000 C CNN
+F 1 "0" V 5700 2650 39  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5700 2650 50  0001 C CNN
+F 3 "~" H 5700 2650 50  0001 C CNN
+	1    5700 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 2250 6700 2250
+Wire Wire Line
+	6350 3250 6700 3250
+Wire Wire Line
+	5450 2900 5900 2900
+Wire Wire Line
+	5700 2750 5500 2750
+Wire Wire Line
+	5500 2750 5500 2700
+Wire Wire Line
+	5500 2700 5350 2700
+Wire Wire Line
+	5350 2600 5500 2600
+Wire Wire Line
+	5500 2600 5500 2550
+Wire Wire Line
+	5500 2550 5700 2550
+Wire Wire Line
+	5700 2750 5900 2750
+Connection ~ 5700 2750
+Wire Wire Line
+	5900 2250 5900 2750
 $EndSCHEMATC
