@@ -492,8 +492,6 @@ Wire Wire Line
 	8150 4050 8400 4050
 Wire Wire Line
 	8400 4050 8400 4000
-NoConn ~ 7700 4100
-NoConn ~ 7500 4100
 $Comp
 L Device:R_Small R5
 U 1 1 61406714
@@ -544,10 +542,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega
 	1    6400 4700
 	0    1    1    0   
 $EndComp
-Text GLabel 6900 3150 2    50   Input ~ 0
-D+
-Text GLabel 6900 2350 2    50   Input ~ 0
-D-
 $Comp
 L Device:R_Small R7
 U 1 1 6102E257
@@ -582,4 +576,69 @@ Wire Wire Line
 Connection ~ 5700 2750
 Wire Wire Line
 	5900 2250 5900 2750
+$Comp
+L Device:C_Small C3
+U 1 1 610069EE
+P 7700 3600
+F 0 "C3" H 7550 3500 50  0000 C CNN
+F 1 "22pf" H 7550 3600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7700 3600 50  0001 C CNN
+F 3 "~" H 7700 3600 50  0001 C CNN
+	1    7700 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 61007820
+P 7500 3600
+F 0 "C2" H 7350 3700 50  0000 C CNN
+F 1 "22pf" H 7350 3600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7500 3600 50  0001 C CNN
+F 3 "~" H 7500 3600 50  0001 C CNN
+	1    7500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_Small Y1
+U 1 1 61002907
+P 7600 3900
+F 0 "Y1" H 7600 4000 50  0000 C CNN
+F 1 "16mhz" V 7600 3900 24  0000 C CNN
+F 2 "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm_HandSoldering" H 7600 3900 50  0001 C CNN
+F 3 "~" H 7600 3900 50  0001 C CNN
+	1    7600 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 61017ABC
+P 8050 3500
+F 0 "#PWR0111" H 8050 3250 50  0001 C CNN
+F 1 "GND" H 8050 3350 50  0000 C CNN
+F 2 "" H 8050 3500 50  0001 C CNN
+F 3 "" H 8050 3500 50  0001 C CNN
+	1    8050 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3500 7500 3350
+Wire Wire Line
+	7500 3350 7700 3350
+Wire Wire Line
+	8050 3350 8050 3500
+Wire Wire Line
+	7700 3500 7700 3350
+Connection ~ 7700 3350
+Wire Wire Line
+	7700 3350 8050 3350
+Wire Wire Line
+	7700 3700 7700 3900
+Connection ~ 7700 3900
+Wire Wire Line
+	7700 3900 7700 4100
+Wire Wire Line
+	7500 4100 7500 3900
+Connection ~ 7500 3900
+Wire Wire Line
+	7500 3900 7500 3700
 $EndSCHEMATC
