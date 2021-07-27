@@ -542,40 +542,12 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega
 	1    6400 4700
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_Small R7
-U 1 1 6102E257
-P 5700 2650
-F 0 "R7" V 5800 2650 50  0000 C CNN
-F 1 "0" V 5700 2650 39  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5700 2650 50  0001 C CNN
-F 3 "~" H 5700 2650 50  0001 C CNN
-	1    5700 2650
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	6350 2250 6700 2250
 Wire Wire Line
 	6350 3250 6700 3250
 Wire Wire Line
 	5450 2900 5900 2900
-Wire Wire Line
-	5700 2750 5500 2750
-Wire Wire Line
-	5500 2750 5500 2700
-Wire Wire Line
-	5500 2700 5350 2700
-Wire Wire Line
-	5350 2600 5500 2600
-Wire Wire Line
-	5500 2600 5500 2550
-Wire Wire Line
-	5500 2550 5700 2550
-Wire Wire Line
-	5700 2750 5900 2750
-Connection ~ 5700 2750
-Wire Wire Line
-	5900 2250 5900 2750
 $Comp
 L Device:C_Small C3
 U 1 1 610069EE
@@ -641,4 +613,13 @@ Wire Wire Line
 Connection ~ 7500 3900
 Wire Wire Line
 	7500 3900 7500 3700
+Wire Wire Line
+	5900 2250 5900 2600
+Connection ~ 5900 2600
+Wire Wire Line
+	5900 2600 5900 2700
+Wire Wire Line
+	5350 2600 5900 2600
+Wire Wire Line
+	5350 2700 5900 2700
 $EndSCHEMATC
